@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Loops and Arrays Project</title>
+    <script src="JS/main.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px auto;
+            width: 60%;
+        }
+
+        hr {
+            margin: 30px auto;
+            width: 60%;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- While Loop Function -->
+    <button onclick="count_to_Ten()">Start Counting</button>
+    <p id="Counting_to_Ten"></p>
+    <hr />
+
+    <!-- For Loop Function -->
+    <button onclick="for_Loop()">Meet the Instruments</button>
+    <p id="List_of_Instruments"></p>
+    <hr />
+
+    <!-- Array Function -->
+    <button onclick="color_array()">Reveal a Color</button>
+    <p id="Array"></p>
+    <hr />
+
+    <!-- Object with let -->
+    <button onclick="car()">Show My Car</button>
+    <p id="Car_Info"></p>
+    <hr />
+</body>
+</html>
