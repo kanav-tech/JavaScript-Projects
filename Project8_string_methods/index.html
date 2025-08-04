@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>String & Number Methods Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f8ff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #004d99;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            margin: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004080;
+        }
+
+        p {
+            font-size: 1.1rem;
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 10px auto;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            color: #333;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: 0;
+            height: 1px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>String & Number Methods Demo</h1>
+
+    <!-- concat() method -->
+    <button onclick="full_sentence()">Click here for a sentence</button>
+    <p id="StringMethod"></p>
+
+    <hr />
+
+    <!-- slice() method -->
+    <button onclick="slice_Method()">Slice, Slice Baby</button>
+    <p id="slice"></p>
+
+    <hr />
+
+    <!-- toString() method -->
+    <button onclick="string_Method()">Click here for a number as a string</button>
+    <p id="ToString"></p>
+
+    <hr />
+
+    <!-- toPrecision() method -->
+    <button onclick="precision_Method()">Surprise Inside</button>
+    <p id="SpecificLength"></p>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
