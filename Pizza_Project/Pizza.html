@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order App</title>
+  <link rel="stylesheet" href="Pizza_CSS/Pizza.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Order Your Pizza</h1>
+
+    <h3>Select Pizza Size:</h3>
+    <label><input type="radio" name="size" value="Personal Pizza"> Personal</label><br>
+    <label><input type="radio" name="size" value="Small Pizza"> Small</label><br>
+    <label><input type="radio" name="size" value="Medium Pizza"> Medium</label><br>
+    <label><input type="radio" name="size" value="Large Pizza" checked> Large</label><br>
+    <label><input type="radio" name="size" value="Extra Large Pizza"> Extra Large</label>
+
+    <h3>Choose Toppings:</h3>
+    <label><input type="checkbox" class="topping" value="Mushrooms"> Mushrooms</label><br>
+    <label><input type="checkbox" class="topping" value="Onions"> Onions</label><br>
+    <label><input type="checkbox" class="topping" value="Tomatoes"> Tomatoes</label><br>
+    <label><input type="checkbox" class="topping" value="Green Peppers"> Green Peppers</label><br>
+    <label><input type="checkbox" class="topping" value="Pepperoni"> Pepperoni</label><br>
+    <label><input type="checkbox" class="topping" value="Sausage"> Sausage</label><br>
+    <label><input type="checkbox" class="topping" value="Chicken"> Chicken</label><br>
+
+    <button onclick="getReceipt()">Place Order</button>
+  </div>
+
+  <div id="receipt">
+    <div id="orderSummary"></div>
+    <div id="totalCost"></div>
+  </div>
+
+  <script src="Pizza_JavaScript/Pizza.js"></script>
+</body>
+</html>
