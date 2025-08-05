@@ -1,0 +1,35 @@
+/* Simple styling for layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #0055aa;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+#resultBox {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.content-box {
+    color: #222;
+}

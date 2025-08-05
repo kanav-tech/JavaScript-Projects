@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Load External Content with AJAX</h1>
+
+    <!-- This button will trigger the AJAX function -->
+    <button id="loadContentBtn">Click to Load Content</button>
+
+    <!-- This is where the loaded content will appear -->
+    <div id="resultBox"></div>
+
+    <script>
+        // Wait for the page to fully load
+        document.addEventListener("DOMContentLoaded", function() {
+            // Select the button and content box
+            const btn = document.getElementById("loadContentBtn");
+            const result = document.getElementById("resultBox");
+
+            // Add a click event to the button
+            btn.addEventListener("click", function() {
+                // Create a new XMLHttpRequest object
+                const xhr = new XMLHttpRequest();
+
+                // Setup a GET request to the content.html file
+                xhr.open("GET", "content.html", true);
+
+                // Define what to do once the response is ready
+                xhr.onload = function() {
+                    if (xhr.status === 200) {
+                        // Insert the response text into the result box
+                        result.innerHTML = xhr.responseText;
+                    } else {
+                        result.innerHTML = "Error loading content.";
+                    }
+                };
+
+                // Send the request
+                xhr.send();
+            });
+        });
+    </script>
+</body>
+</html>
