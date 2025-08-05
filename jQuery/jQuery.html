@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My jQuery Challenge</title>
+  <!-- Link to the Google CDN jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <style>
+    /* Styling for demo */
+    #container {
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      text-align: center;
+    }
+    .paragraph {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+    h2 {
+      cursor: pointer;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <h2>Hover over this title</h2>
+    <p id="p1" class="paragraph">This is paragraph 1</p>
+    <p id="p2" class="paragraph">This is paragraph 2</p>
+    <p id="p3" class="paragraph">Click me to toggle the heading!</p>
+  </div>
+
+  <script>
+    // Wait for the document to fully load
+    $(document).ready(function () {
+
+      // jQuery event: When you hover over the heading, change its color
+      $("h2").hover(function () {
+        $(this).css("color", "green");
+      }, function () {
+        $(this).css("color", "darkblue");
+      });
+
+      // jQuery effect: Slide toggle the heading when paragraph 3 is clicked
+      $("#p3").click(function () {
+        $("h2").slideToggle();
+      });
+
+      // Styling paragraph 2 using jQuery
+      $("#p2").css({
+        "background-color": "#ffe4b5",
+        "font-weight": "bold"
+      });
+    });
+  </script>
+
+</body>
+</html>
